@@ -1,5 +1,5 @@
 <script>
-  console.log('Holas');
+  console.log('Holas jajaja');
 </script>
 
 <style src="./style.scss">

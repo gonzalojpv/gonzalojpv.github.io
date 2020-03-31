@@ -26,14 +26,10 @@ export default {
 				dev,
 				hydratable: true,
 				emitCss: true,
-				preprocess: sveltePreprocessor({
-					scss: true,
-				}),
+				preprocess: sveltePreprocessor(),
 			}),
 			resolve({
-        module: true,
 				browser: true,
-        main: true,
 				dedupe: ['svelte']
 			}),
 			commonjs(),
@@ -74,12 +70,9 @@ export default {
 			svelte({
 				generate: 'ssr',
 				dev,
-				preprocess: sveltePreprocessor({
-					scss: true,
-				}),
+				preprocess: sveltePreprocessor(),
 			}),
 			resolve({
-        module: true,
 				dedupe: ['svelte']
 			}),
 			commonjs()
@@ -95,7 +88,7 @@ export default {
 		input: config.serviceworker.input(),
 		output: config.serviceworker.output(),
 		plugins: [
-      resolve({ module: true }),
+      resolve(),
 			replace({
 				'process.browser': true,
 				'process.env.NODE_ENV': JSON.stringify(mode)

@@ -11,7 +11,6 @@
 	<title>Bahlum</title>
 </svelte:head>
 
-<Container>
 	<Row>
 		<Col cols="12">
 			<h1>Hi, I’m Gonzalo P. Vargas</h1>
@@ -20,4 +19,3 @@
       <Hola/>
 		</Col>
 	</Row>
-</Container>
