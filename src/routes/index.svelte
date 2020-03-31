@@ -27,6 +27,6 @@
 </svelte:head>
 
 <h1>Hi, I’m Gonzalo P. Vargas</h1>
-<h3 class="text-center">Full-Stack Developer jk</h3>
+<h3 class="text-center">Full-Stack Developer</h3>
 
 <p><strong>Open your ... mind, soul and source.</strong></p>

@@ -2,7 +2,7 @@ name: Build and Deploy
 on:
   push:
     branches:
-      - master
+      - deploy
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
@@ -22,5 +22,5 @@ jobs:
       uses: JamesIves/github-pages-deploy-action@releases/v3
       with:
         ACCESS_TOKEN: ${{ secrets.github_bahlum }}
-        BRANCH: gh-pages
+        BRANCH: master
         FOLDER: __sapper__/export/gonzalojpv.github.io
