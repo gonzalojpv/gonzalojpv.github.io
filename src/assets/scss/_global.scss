@@ -58,3 +58,11 @@
       text-decoration: none;
     }
 }
+
+:global(code) {
+  color: map-get($theme-colors, primary);
+}
+
+main {
+  padding-top: 2rem;
+}

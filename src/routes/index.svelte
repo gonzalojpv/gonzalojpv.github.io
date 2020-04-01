@@ -1,5 +1,4 @@
 <script>
-	import { Col, Container, Row } from 'sveltestrap';
   import Welcome from '../components/Welcome/index.svelte';
 
 </script>

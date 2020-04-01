@@ -1,4 +1,6 @@
 <script context="module">
+	import { Col, Container, Row } from 'sveltestrap';
+
 	export async function preload({ params, query }) {
 		// the `slug` parameter is available because
 		// this file is called [slug].svelte
@@ -17,7 +19,8 @@
 	export let post;
 </script>
 
-<style>
+<style lang="scss">
+	@import '../../assets/scss/_variables';
 	/*
 		By default, CSS is locally scoped to the component,
 		and any unused styles are dead-code-eliminated.
@@ -32,7 +35,8 @@
 	}
 
 	.content :global(pre) {
-		background-color: #f9f9f9;
+		background-color: map-get($theme-colors, secondary);
+		color: map-get($theme-colors, light);
 		box-shadow: inset 1px 1px 5px rgba(0,0,0,0.05);
 		padding: 0.5em;
 		border-radius: 2px;
@@ -57,8 +61,14 @@
 	<title>{post.title}</title>
 </svelte:head>
 
-<h1>{post.title}</h1>
+<Container>
+  <Row>
+    <Col cols="12">
+    	<h1>{post.title}</h1>
 
-<div class='content'>
-	{@html post.html}
-</div>
+			<div class='content'>
+				{@html post.html}
+			</div>
+    </Col>
+  </Row>
+</Container>
