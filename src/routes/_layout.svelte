@@ -1,19 +1,11 @@
 <script>
-	import Nav from '../components/Nav.svelte';
+	import Nav from '../components/Nav/index.svelte';
 	import 'bootstrap/dist/css/bootstrap.min.css';
 
 	export let segment;
 </script>
 
-<style>
-	main {
-		position: relative;
-		max-width: 56em;
-		background-color: white;
-		padding: 2em;
-		margin: 0 auto;
-		box-sizing: border-box;
-	}
+<style src="../assets/scss/_global.scss">
 </style>
 
 <Nav {segment}/>

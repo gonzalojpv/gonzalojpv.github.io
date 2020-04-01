@@ -1,7 +1,3 @@
-<script>
-  console.log('Holas jajaja');
-</script>
-
 <style src="./style.scss">
 </style>
 

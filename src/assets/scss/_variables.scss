@@ -1,5 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Roboto+Mono:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,400;1,500;1,700&display=swap");
+/** Fonts **/
+$font-header: 'Amatic SC', cursive;
+$font-family-base: 'Roboto Mono', monospace;
+
 $theme-colors: (
     primary: #c24332,
+    primary-light: rgba(194, 67, 50, 0.5),
     secondary: #63948c,
     light: #ebe6d1,
     dark: #2e303f);

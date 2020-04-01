@@ -1,0 +1,18 @@
+@import '../../assets/scss/_variables';
+
+.section-welcome {
+  height: 80vh;
+
+  h1 {
+    font-weight: 700;
+  }
+
+  h3 {
+    color: map-get($theme-colors, primary);
+    margin-bottom: 1rem;
+  }
+
+  p {
+    color: map-get($theme-colors, dark);
+  }
+}
