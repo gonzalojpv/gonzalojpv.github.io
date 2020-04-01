@@ -39,4 +39,13 @@
 			</ul>
     </Col>
   </Row>
+
+  <Row>
+  	<Col cols="12">
+  		<hr>
+  		<blockquote class="blockquote">
+        <p class="mb-0 text-center">Imagination is more important than knowledge</p>
+      </blockquote>
+  	</Col>
+  </Row>
 </Container>
