@@ -8,19 +8,19 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Checkout
-      uses: actions/checkout@v2
+      uses: actions/checkout@2.3.1
       with:
         persist-credentials: false
 
     - name: Use Node.js '12.x'
       uses: actions/setup-node@v1
       with:
-        node-version: '12.x'
+        node-version: '14.x'
     - run: npm install
     - run: npm run export
     - name: Build and Deploy
-      uses: JamesIves/github-pages-deploy-action@releases/v3
+      uses: JamesIves/github-pages-deploy-action@4.0.0
       with:
         ACCESS_TOKEN: ${{ secrets.github_bahlum }}
         BRANCH: master
-        FOLDER: __sapper__/export/../
+        FOLDER: __sapper__/build
