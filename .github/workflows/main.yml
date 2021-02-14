@@ -23,4 +23,4 @@ jobs:
       with:
         ACCESS_TOKEN: ${{ secrets.github_bahlum }}
         BRANCH: gh-pages
-        FOLDER: __sapper__/export/gonzalojpv.github.io
+        FOLDER: __sapper__/export/
